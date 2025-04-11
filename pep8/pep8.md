@@ -30,8 +30,10 @@ total = (
 ---
 
 ## 🔹 Blank Lines
-- 2 blank lines before top-level functions/classes.
-- 1 blank line between methods inside a class.
+- 2 blank lines before top-level **functions/classes**.
+- 1 blank line between **methods** inside a class.
+- Extra blank lines can be used *sparingly* to separate logic within functions.
+
 
 ---
 
@@ -105,7 +107,14 @@ def add(a, b):
 def greet(name: str) -> str:
     return f"Hello, {name}"
 ```
+## 🔹 The Main Entry Point
 
+Use this to make your script runnable and also import-safe:
+
+```python
+if __name__ == "__main__":
+    main()
+```
 ---
 
 ## 🔹 Tools for Auto-formatting
@@ -122,10 +131,23 @@ black script.py
 isort script.py
 flake8 script.py
 ```
+## DRY: don't repeat yourself
+always try to reuse codes by making funcitons
+
+```python
+def send_email(user):
+    # Logic to send email
+    ...
+
+send_email("mamun")
+send_email("alex")
+
+```
 
 > `black` defaults to 88-character lines — PEP 8 says 79. Use `flake8` to catch long lines.
 
 ---
+Look this guidline is to increase your code readabilty and works by making your code consistent . There will be some times when you might need to ignore some rules as they will be unablicable. On those moments you have to use your brain and take the best possible decision . 
 
 ## ✅ Final Tip
 Write code like someone else will read it — because someone (or future you) will. Stick to the style, stay consistent, and let tools handle the rest.
