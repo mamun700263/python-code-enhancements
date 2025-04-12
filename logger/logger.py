@@ -12,9 +12,9 @@ formatter = logging.Formatter(
 )
 
 # Create a file handler it shows in the terminal
-ch = logging.StreamHandler()
-ch.setFormatter(formatter)
-logger.addHandler(ch)
+# ch = logging.StreamHandler()
+# ch.setFormatter(formatter)
+# logger.addHandler(ch)
 
 #this will show in the file
 fh = logging.FileHandler("logger/user_manager.log") #location of the log file
