@@ -17,7 +17,50 @@ formatter = logging.Formatter(
 # logger.addHandler(ch)
 
 #this will show in the file
-fh = logging.FileHandler("logger/user_manager.log") #location of the log file
+fh = logging.FileHandler("user_manager.log") #location of the log file
 fh.setFormatter(formatter)#this will show in the file
 logger.addHandler(fh)
 
+'''
+### 🔥 Basic Logging Levels with Emojis
+
+| Level         | Emoji(s)                              | Vibe / Usage                                      |
+|---------------|----------------------------------------|---------------------------------------------------|
+| **DEBUG**     | 🐛 🔍 🧠 🛠️                          | For dev brain juice, deep dives, internal states  |
+| **INFO**      | ℹ️ ✅ 📘 🧾 🪄                         | Regular updates, progress logs                    |
+| **SUCCESS**   | ✅ 🎉 🟢 🚀 💯                         | Completed tasks, successful ops                   |
+| **WARNING**   | ⚠️ 🟡 👀 🚧 🫣                         | Something sus, but not broken                     |
+| **ERROR**     | ❌ 🔴 🛑 💥 🤬                         | Uh oh, something broke                            |
+| **CRITICAL**  | 💣 🚨 🔥 😱 💀                        | System failure, fix this ASAP                     |
+
+---
+
+### 🧩 Extra Emojis for Specific Contexts
+
+| Context                   | Emoji(s)                              |
+|---------------------------|----------------------------------------|
+| API Call                  | 🌐 📡 📲                              |
+| Database                  | 🗄️ 💾 📦                              |
+| Authentication/Login      | 🔐 🧑‍💻 🪪                            |
+| File System               | 📁 📝 📂                              |
+| Time/Delay                | ⏳ ⏰ 🕒                              |
+| Start/Init                | 🟢 🚀 🛫                              |
+| Shutdown/Exit             | 🔚 🛑 👋                              |
+| Network/Proxy             | 🌍 🕸️ 🧱                             |
+| Retry/Loop                | 🔁 ♻️ 🔄                             |
+
+---
+
+### 🔮 How to Use (Python Logging Example)
+
+```python
+import logging
+
+logging.info("ℹ️ App started")
+logging.debug("🐛 Debugging connection issue...")
+logging.warning("⚠️ Memory usage high")
+logging.error("❌ Failed to connect to DB")
+logging.critical("💀 System is down!")
+```
+
+'''
