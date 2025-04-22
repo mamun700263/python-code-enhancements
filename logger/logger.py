@@ -54,7 +54,7 @@ logger.addHandler(fh)
 ### 🔮 How to Use (Python Logging Example)
 
 ```python
-import logging
+from logger import logger
 
 logging.info("ℹ️ App started")
 logging.debug("🐛 Debugging connection issue...")
